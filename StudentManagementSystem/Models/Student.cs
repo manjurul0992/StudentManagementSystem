@@ -21,13 +21,14 @@ namespace StudentManagementSystem.Models
         [Required(ErrorMessage = "Student Name is requiered!!"), StringLength(50), Display(Name = "Employee Name")]
         public string StudentName { get; set; }
 
-        [Required, DataType(DataType.Date), Column("date"), DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [Required, DataType(DataType.Date), Column(TypeName = "datetime"), DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true),Display(Name ="Date Of Birth")]
         public DateTime BirthDate { get; set; }
+
 
         [Required(ErrorMessage = "Class Name is requiered!!"), StringLength(50), Display(Name = "Class Name")]
         public string Class { get; set; }
 
-        [Required, EnumDataType(typeof(Section))]
+        [Required(ErrorMessage = "Section Name is requiered!!"), EnumDataType(typeof(Section))]
         public Section Section { get; set; }
 
 

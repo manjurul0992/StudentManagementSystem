@@ -19,6 +19,7 @@ namespace StudentManagementSystem
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
            
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<StudentManagementSystem.Data.AppDbContext, StudentManagementSystem.Migrations.Configuration>());
         }
     }
 }

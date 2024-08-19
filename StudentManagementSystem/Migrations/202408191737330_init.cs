@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class A : DbMigration
+    public partial class init : DbMigration
     {
         public override void Up()
         {
@@ -13,7 +13,7 @@
                     {
                         StudentId = c.Int(nullable: false, identity: true),
                         StudentName = c.String(nullable: false, maxLength: 50),
-                        date = c.DateTime(nullable: false),
+                        BirthDate = c.DateTime(nullable: false),
                         Class = c.String(nullable: false, maxLength: 50),
                         Section = c.Int(nullable: false),
                     })

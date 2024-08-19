@@ -4,7 +4,6 @@
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
-    using System.Diagnostics;
     using System.Linq;
 
     internal sealed class Configuration : DbMigrationsConfiguration<StudentManagementSystem.Data.AppDbContext>
@@ -16,23 +15,40 @@
 
         protected override void Seed(StudentManagementSystem.Data.AppDbContext context)
         {
-            context.Students.Add(new Student
-            {
-                StudentName = "Test",
-                BirthDate = new DateTime(2012, 12, 12),
-                Class = "One",
-                Section = Section.Science
-            });
-            
+            context.Students.AddOrUpdate(
+                 s => s.StudentName,
+                 new Student
+                 {
+                     StudentName = "Manjurul",
+                     BirthDate = new DateTime(2005, 5, 12),
+                     Class = "10th",
+                     Section = Section.Science
+                 },
+                 new Student
+                 {
+                     StudentName = "Syed",
+                     BirthDate = new DateTime(2004, 3, 18),
+                     Class = "11th",
+                     Section = Section.Arts
+                 },
+                 new Student
+                 {
+                     StudentName = "Arju",
+                     BirthDate = new DateTime(2005, 8, 22),
+                     Class = "10th",
+                     Section = Section.Commerence
+                 },
+                 new Student
+                 {
+                     StudentName = "Brown",
+                     BirthDate = new DateTime(2003, 11, 4),
+                     Class = "12th",
+                     Section = Section.Science
+                 }
+             );
 
-            context.Students.Add(new Student
-            {
-                StudentName = "Test1",
-                BirthDate = new DateTime(2012, 12, 12),
-                Class = "Two",
-                Section = Section.Arts
-            });
-            context.SaveChanges();
+
+            base.Seed(context);
         }
     }
 }
