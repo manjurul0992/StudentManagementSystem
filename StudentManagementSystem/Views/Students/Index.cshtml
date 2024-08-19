@@ -47,3 +47,68 @@
         </div>
     </div>
 </div>
+@section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+<script>
+        // Reusable function to show Toastr notifications
+        function showToastrNotification(type, message, options) {
+            // Set default options if none are provided
+            var defaultOptions = {
+                "closeButton": true,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            };
+
+            // Merge provided options with the default options
+            var toastrOptions = $.extend({}, defaultOptions, options);
+
+            toastr.options = toastrOptions;
+
+            // Show the notification based on the type
+            toastr[type](message);
+        }
+
+        $(document).ready(function () {
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <text>
+                    showToastrNotification('success', '@TempData["SuccessMessage"]');
+                </text>
+            }
+            @if (TempData["ShowData"] != null)
+            {
+                <text>
+                    showToastrNotification('info', '@TempData["ShowData"]', {
+                        "positionClass": "toast-bottom-left",
+                        "timeOut": "10000",
+                        "extendedTimeOut": "8000"
+                    });
+                </text>
+            }
+            @if (TempData["Edit"] != null)
+            {
+                <text>
+            showToastrNotification('warning', '@TempData["Edit"]');
+                </text>
+            }
+             @if (TempData["Delete"] != null)
+            {
+                 <text>
+             showToastrNotification('warning', '@TempData["Delete"]');
+                 </text>
+            }
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <text>
+                    showToastrNotification('error', '@TempData["ErrorMessage"]');
+                </text>
+            }
+        });
+</script>
+}
+
+

@@ -9,6 +9,7 @@
     @RenderSection("styles", required: false)
     <link href="~/Content/font-awesome.css" rel="stylesheet" />
     <link href="~/Content/PagedList.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
@@ -22,7 +23,7 @@
                 <ul class="navbar-nav flex-grow-1">
                     <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Student", "Index", "Students", new { area = "" }, new { @class = "nav-link" })</li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -38,5 +39,7 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </body>
 </html>

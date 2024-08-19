@@ -42,12 +42,16 @@ namespace StudentManagementSystem.Controllers
                 {
                     _student.InsertBook(student);
                     _student.Save();
+                    TempData["SuccessMessage"] = "Student created successfully!";
+                    TempData["ShowData"] = "And Data Contain in the Last Page!";
+
                     return RedirectToAction("Index");
                 }
             }
             catch (DataException)
             {
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
+                TempData["ErrorMessage"] = "Unable to save changes. Please try again.";
             }
 
             return View(student);
@@ -67,12 +71,16 @@ namespace StudentManagementSystem.Controllers
                 {
                     _student.UpdateBook(student);
                     _student.Save();
+                    TempData["Edit"] = "Student Updated successfully!";
+
                     return RedirectToAction("Index");
                 }
             }
             catch (DataException)
             {
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
+                TempData["ErrorMessage"] = "Unable to Update changes. Please try again.";
+
             }
             return View(student);
         }
@@ -95,14 +103,18 @@ namespace StudentManagementSystem.Controllers
                 Student student = _student.GetBookByID(id);
                 _student.DeleteBook(id);
                 _student.Save();
+                TempData["Delete"] = "Student Deleted successfully!";
+
             }
             catch (DataException)
             {
                 return RedirectToAction("Delete", new System.Web.Routing.RouteValueDictionary
+
         {
             { "id", id },
             { "saveChangesError", true }
         });
+
             }
 
             return RedirectToAction("Index");
