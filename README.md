@@ -40,7 +40,7 @@ You can either clone the repository or download it as a ZIP file:
 
 1. Open the solution file (.sln) in Visual Studio.
 2.Run.
-if facing this error ![Error Images](./Images/Screenshot 2024-08-20 061142.png)
+if facing this error ![Error Images](https://github.com/manjurul0992/StudentManagementSystem/blob/master/Images/Screenshot%202024-08-20%20061142.png)
 3. If you encounter an error related to Microsoft.CodeDom.Providers.DotNetCompilerPlatform, follow these steps:
 Open NuGet Package Manager in Visual Studio.
 		a. Uninstall the Microsoft.CodeDom.Providers.DotNetCompilerPlatform package.
