@@ -52,6 +52,12 @@ Open NuGet Package Manager in Visual Studio.
 If you encounter any issues, ensure that:
 		- 1.All dependencies are installed correctly.
 		- 2. The SQL Server connection string is configured properly.
+# Images
+![Index Images](https://github.com/manjurul0992/StudentManagementSystem/blob/master/Images/Screenshot%202024-08-20%20071616.png)
+![Create Images](https://github.com/manjurul0992/StudentManagementSystem/blob/master/Images/Screenshot%202024-08-20%20071628.png)
+![edit Images](https://github.com/manjurul0992/StudentManagementSystem/blob/master/Images/Screenshot%202024-08-20%20071654.png)
+![delete Images](https://github.com/manjurul0992/StudentManagementSystem/blob/master/Images/Screenshot%202024-08-20%20071710.png)
+![notification Images](https://github.com/manjurul0992/StudentManagementSystem/blob/master/Images/Screenshot%202024-08-20%20071728.png)
 
 # Video Instructions
 [![Video Title](./Images/video-thumbnail.png)](https://github.com/manjurul0992/StudentManagementSystem/raw/master/Images/Video_2024-08-20_060855.wmv)
