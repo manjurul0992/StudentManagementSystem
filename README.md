@@ -16,12 +16,12 @@ Ensure you have the following installed:
 
 You can either clone the repository or download it as a ZIP file:
 
-1. **Clone the repository:**
+- 1. **Clone the repository:**
 
    ```bash
    git clone https://github.com/manjurul0992/StudentManagementSystem.git
 
-2.Or Download the ZIP file:
+- 2.Or Download the ZIP file:
 
 * Download the repository as a ZIP file from this link https://github.com/manjurul0992/StudentManagementSystem/archive/refs/heads/master.zip.
 * Extract the contents to your local machine
@@ -38,23 +38,23 @@ You can either clone the repository or download it as a ZIP file:
 # Build and Run the Project
 
 
-1. Open the solution file (.sln) in Visual Studio.
-2.Run.
+- 1. Open the solution file (.sln) in Visual Studio.
+- 2.Run.
 if facing this error ![Error Images](https://github.com/manjurul0992/StudentManagementSystem/blob/master/Images/Screenshot%202024-08-20%20061142.png)
-3. If you encounter an error related to Microsoft.CodeDom.Providers.DotNetCompilerPlatform, follow these steps:
+- 3. If you encounter an error related to Microsoft.CodeDom.Providers.DotNetCompilerPlatform, follow these steps:
 Open NuGet Package Manager in Visual Studio.
-		a. Uninstall the Microsoft.CodeDom.Providers.DotNetCompilerPlatform package.
-		b. Reinstall the package.
-		c. Rebuild the project.
-		d. Close the project in Visual Studio.
-		d. Reopen the project and run it again.
+		- a. Uninstall the Microsoft.CodeDom.Providers.DotNetCompilerPlatform package.
+		- b. Reinstall the package.
+		- c. Rebuild the project.
+		- d. Close the project in Visual Studio.
+		- d. Reopen the project and run it again.
 # Troubleshooting
 If you encounter any issues, ensure that:
-		1.All dependencies are installed correctly.
-		2. The SQL Server connection string is configured properly.
+		- 1.All dependencies are installed correctly.
+		- 2. The SQL Server connection string is configured properly.
 
 # Video Instructions
-[![Video Title](./Images/video-thumbnail.png)](./Images/Video_2024-08-20_060855.wmv)
+[![Video Title](./Images/video-thumbnail.png)](https://github.com/manjurul0992/StudentManagementSystem/blob/master/Images/Video_2024-08-20_060855.wmv)
 
 For a step-by-step video tutorial on how to set up and run this project, refer to the video instructions.
 https://github.com/manjurul0992/StudentManagementSystem/blob/master/Images/Video_2024-08-20_060855.wmv
