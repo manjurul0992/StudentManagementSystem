@@ -54,7 +54,7 @@ If you encounter any issues, ensure that:
 		- 2. The SQL Server connection string is configured properly.
 
 # Video Instructions
-[![Video Title](./Images/video-thumbnail.png)](https://github.com/manjurul0992/StudentManagementSystem/blob/master/Images/Video_2024-08-20_060855.wmv)
+[![Video Title](./Images/video-thumbnail.png)](https://github.com/manjurul0992/StudentManagementSystem/raw/master/Images/Video_2024-08-20_060855.wmv)
 
 For a step-by-step video tutorial on how to set up and run this project, refer to the video instructions.
 https://github.com/manjurul0992/StudentManagementSystem/blob/master/Images/Video_2024-08-20_060855.wmv
